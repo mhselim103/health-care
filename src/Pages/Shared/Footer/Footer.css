@@ -1,0 +1,12 @@
+.footer {
+  background-color: #1f2937;
+  margin-top: 50px;
+}
+.footer-menu {
+  list-style: none;
+  margin: 5px 0;
+}
+.footer-menu:hover {
+  color: red;
+  cursor: pointer;
+}
