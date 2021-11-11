@@ -1,19 +1,17 @@
 import React from "react";
+import "./Service.css";
 
 const Service = ({ singleService }) => {
   return (
     <div className="col">
-      <div className="card">
-        <img src="..." className="card-img-top" alt="..." />
-        <div className="card-body">
-          <h5 className="card-title">{singleService.title}</h5>
-          <p className="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-        </div>
-        <div className="card-footer">
-          <small className="text-muted">Last updated 3 mins ago</small>
+      <div className="card h-100 cursour">
+        <img
+          src={singleService.image}
+          className="card-img-top h-100"
+          alt="..."
+        />
+        <div className="card-body bg-black">
+          <h5 className="card-title text-light">{singleService.title}</h5>
         </div>
       </div>
     </div>

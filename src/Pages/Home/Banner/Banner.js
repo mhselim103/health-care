@@ -10,7 +10,7 @@ const Banner = () => {
       <Carousel className="carousel">
         <Carousel.Item interval={1000}>
           <img className="d-block img" src={slide1} alt="First slide" />
-          <Carousel.Caption>
+          <Carousel.Caption className="d-flex">
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>

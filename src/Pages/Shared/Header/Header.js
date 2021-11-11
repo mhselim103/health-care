@@ -14,8 +14,8 @@ const Header = () => {
               <Nav.Link href="#about">About Us</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link eventKey={1}>Log In</Nav.Link>
-              <Nav.Link eventKey={2}>Sign Up</Nav.Link>
+              <Nav.Link>Log In</Nav.Link>
+              <Nav.Link>Sign Up</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
