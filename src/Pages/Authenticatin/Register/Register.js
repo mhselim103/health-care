@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import useAuth from "../../Hooks/useAuth";
+import useAuth from "../../../Hooks/useAuth";
 
 const Register = () => {
   const { signInUsingGoogle } = useAuth();

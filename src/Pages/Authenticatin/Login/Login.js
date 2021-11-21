@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { Link, useLocation, useHistory } from "react-router-dom";
-import useAuth from "../../Hooks/useAuth";
+import useAuth from "../../../Hooks/useAuth";
 
 const LogIn = () => {
   const location = useLocation();
@@ -33,7 +33,7 @@ const LogIn = () => {
           <input type="password" name="password" id="password" />
         </form>
         <p>
-          New to Red-Onion? <Link to="/register">Register</Link>
+          New to Noble Cure? <Link to="/register">Register</Link>
         </p>
         <div>--------------or------------</div>
         <Button variant="primary" onClick={handleSignIn}>

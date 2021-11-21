@@ -8,17 +8,13 @@ const Footer = () => {
         <div className="row text-light">
           <div className="col-md-6 left-container">
             <div>
-              <img className="w-25" src="" alt="" />
+              <h1>Noble Cure</h1>
             </div>
           </div>
           <div className="col-md-6 right-container">
             <div className="row">
               <div className="col-md-6 d-md-flex justify-content-md-center justify-content-sm-center">
                 <ul className="">
-                  <li className="footer-menu">About Online Food</li>
-                  <li className="footer-menu">Read our blog</li>
-                  <li className="footer-menu">Sign up to deliver</li>
-                  <li className="footer-menu">Add your restaurant</li>
                   <li className="footer-menu">Get Help</li>
                   <li className="footer-menu">Ask any question</li>
                 </ul>
@@ -45,7 +41,6 @@ const Footer = () => {
               <ul className="d-flex justify-content-evenly">
                 <li className="footer-menu">Privacy Policy</li>
                 <li className="footer-menu">Terms and Policy</li>
-                <li className="footer-menu">Pricing</li>
               </ul>
             </div>
           </div>

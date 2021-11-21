@@ -1,6 +1,10 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { HashLink } from "react-router-hash-link";
+import useAuth from "../../../Hooks/useAuth";
 const Header = () => {
+  const { user } = useAuth();
+  console.log(user.email);
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -9,13 +13,34 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#services">Services</Nav.Link>
-              <Nav.Link href="#about">About Us</Nav.Link>
+              <Nav.Link as={HashLink} to="/home">
+                Home
+              </Nav.Link>
+              <Nav.Link as={HashLink} to="/services">
+                Services
+              </Nav.Link>
+              <Nav.Link as={HashLink} to="/home">
+                About Us
+              </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link>Log In</Nav.Link>
-              <Nav.Link>Sign Up</Nav.Link>
+              {!user.email ? (
+                <Nav.Link as={HashLink} to="/login">
+                  Log In
+                </Nav.Link>
+              ) : (
+                <Nav.Link>
+                  {" "}
+                  <span>{user.displayName}</span>{" "}
+                </Nav.Link>
+              )}
+              {!user.email ? (
+                <Nav.Link as={HashLink} to="/register">
+                  Sign Up
+                </Nav.Link>
+              ) : (
+                <Nav.Link>Log Out</Nav.Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

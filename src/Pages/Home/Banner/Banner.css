@@ -1,4 +1,10 @@
 .img {
-  height: 500px;
+  /* height: 400px; */
   width: 100%;
-}
+} /* 
+.carousel-caption {
+  top: 20%;
+  transform: translateY(-50%);
+  bottom: initial;
+  background-color: red;
+} */
