@@ -8,13 +8,13 @@ const LogIn = () => {
   const { signInUsingGoogle, setIsLoading } = useAuth();
   const history = useHistory();
   const redirect_uri = location.state?.from || "/home";
-  console.log(location.state?.from);
+  // console.log(location.state?.from);
 
   const handleSignIn = () => {
     signInUsingGoogle()
       .then((result) => {
         history.push(redirect_uri);
-        console.log(result);
+        // console.log(result);
       })
       .finally(() => setIsLoading(false));
   };

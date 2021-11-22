@@ -13,7 +13,7 @@ const Service = ({ singleService }) => {
         />
         <div className="card-body">
           <h5 className="card-title">{singleService.title}</h5>
-          <Link to="/details">
+          <Link to={`/details/${singleService.id}`}>
             <button className="btn-primary rounded-3">See Details</button>
           </Link>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import "./Hospital.css";
 
 const Hospital = (props) => {
-  const { title, description, image } = props.hospital;
+  const { title, image } = props.hospital;
   return (
     <div className="col">
       <div className="card text-center hospital">
