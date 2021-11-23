@@ -11,15 +11,12 @@ const ServiceDetail = () => {
   );
   // console.log(detailedService);
   return (
-    <Card style={{ width: "18rem" }} className="text-center mx-auto my-5">
+    <Card style={{ width: "25rem" }} className="text-center mx-auto my-5">
       <Card.Img variant="top" src={detailedService[0]?.image} />
       <Card.Body>
         <Card.Title>{detailedService[0]?.title}</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Text>{detailedService[0]?.description}</Card.Text>
+        <Button variant="primary">Make Appointment</Button>
       </Card.Body>
     </Card>
   );

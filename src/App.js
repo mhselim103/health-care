@@ -31,6 +31,7 @@ function App() {
           <Route exact path="/register">
             <Register></Register>
           </Route>
+
           <PrivateRoute exact path="/details/:id">
             <ServiceDetail></ServiceDetail>
           </PrivateRoute>
