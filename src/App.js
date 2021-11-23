@@ -10,6 +10,7 @@ import ServiceDetail from "./Pages/ServiceDetail/ServiceDetail";
 import LogIn from "./Pages/Authenticatin/Login/Login";
 import Register from "./Pages/Authenticatin/Register/Register";
 import Services from "./Pages/Home/Services/Services";
+import NotFound from "./Pages/NotFound/NotFound";
 function App() {
   return (
     <AuthProvider>
@@ -31,10 +32,12 @@ function App() {
           <Route exact path="/register">
             <Register></Register>
           </Route>
-
           <PrivateRoute exact path="/details/:id">
             <ServiceDetail></ServiceDetail>
           </PrivateRoute>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
         </Switch>
         <Footer></Footer>
       </BrowserRouter>
